@@ -2,13 +2,7 @@ import Config
 
 # Configure your database
 config :onboard, Defdo.Onboard.Repo,
-  username: "postgres",
-  password: "postgres",
-  hostname: "localhost",
-  database: "defdo_dev",
-  stacktrace: true,
-  show_sensitive_data_on_connection_error: true,
-  pool_size: 10
+  url: "postgres://paridincom_defdo_onboard_app:Yp5NA3BRpy6Dq2uUpw@db.defdo.in/paridincom_defdo_onboard"
 
 # For development, we disable any cache and enable
 # debugging and code reloading.
