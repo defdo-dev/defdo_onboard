@@ -61,6 +61,7 @@ if config_env() == :prod do
       ip: {0, 0, 0, 0, 0, 0, 0, 0},
       port: port
     ],
+    check_origin: (System.get_env("HTTP_ORIGINS") || "localhost") |> String.split(" "),
     secret_key_base: secret_key_base
 
   # ## Configuring the mailer
